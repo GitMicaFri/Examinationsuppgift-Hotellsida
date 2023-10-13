@@ -1,0 +1,205 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    
+    background-color:rgb(243, 239, 235);
+    width: 100%;
+    height: auto;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding: 3rem;
+    font-weight:700;
+    letter-spacing: 0.1rem;
+    margin-bottom: 2rem;
+}
+
+.logo {
+    height: 3rem;
+    background-color: purple;
+    border-radius: 6px;
+    padding: 3px;
+}
+
+.about, .home, .rooms, .contact {
+    font-size: 1.2rem;
+}
+
+.header-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    background-image:url(../EgnaBilder/Mexico-Paradisus-Playa-del-Carmen.jpg);
+    height: 35rem;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    margin-bottom: 2rem;
+  
+    /*margin: 2rem;
+    border: 2px solid rgb(122, 134, 243);*/
+}
+
+.background-text, .background-text2 {
+    
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+    padding: 2rem;
+    background-color:rgba(0, 0, 255, 0.13);
+}
+
+h1 {
+    font-size: 3rem;
+    letter-spacing: 0.1rem;
+    margin-top: 1rem;
+}
+
+h2 {
+    font-size: 2.5rem;
+    text-align: center;
+}
+
+.playacarmen {
+    font-size: 1.5rem;
+    letter-spacing:0.1rem;
+}
+
+.blue-btn {
+    height: 2rem;
+    width: 6rem;
+    background-color:purple;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    letter-spacing: 0.1rem;
+    margin-top: 2rem;
+}
+
+.area-img {
+    width: 20rem;
+}
+.area-wrapper {
+    display:grid;
+    grid-template-columns: repeat(6, 1fr);
+    padding: 3rem;
+    gap: 2rem;
+}
+
+.booking {
+    display: flex;
+    justify-content: space-around;
+}
+
+.submit {
+    height: 4rem;
+    width: 6rem;
+    background-color: purple;
+    color: white;
+    font-size: 1.5rem;
+    padding: 1rem;
+    border-radius:10px;
+}
+
+
+.rooms-wrapper {
+    display:flex;
+    justify-content:space-around;
+    flex-wrap: wrap;
+    padding: 3rem;
+
+}
+
+.chose-rooms {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    font-size: 2rem;
+ 
+}
+
+.calendar {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 2rem;
+    height: 4rem;
+    margin-top: 4rem;
+}
+
+.calendar-size {
+    font-size: 2rem;
+    border: 1px solid red;
+}
+
+#check {
+    height: 3rem;
+    width: 19rem;
+}
+
+.room-img {
+    width:40rem;
+    height: 30rem;
+    padding: 2rem;
+}
+
+.room-description {
+    display: flex;
+    flex-direction: column;
+    padding: 2rem;
+    text-align: center;
+    font-size:1.5rem;
+}
+
+.reserve, .swimup, .dinner, .pool, .poolbynight, .poolbar {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+#suite, #double, #superior {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 2rem;
+}
+
+
+.contact {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Media query for screens with a maximum width of 768px (typical for tablets and small screens) */
+@media only screen and (max-width: 768px) {
+    body {
+        font-size: 14px;
+        /* Adjust styles for smaller screens */
+    }
+
+ /* Media query for screens with a maximum width of 480px (typical for mobile phones) */
+@media only screen and (max-width: 480px) {
+    body {
+        font-size: 12px;
+        /* Further adjust styles for smaller screens */
+    }   
+ }
+  }
