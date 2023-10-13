@@ -95,7 +95,7 @@ h2 {
 }
 .area-wrapper {
     display:grid;
-    grid-template-columns: repeat(6, 1fr);
+    grid-template-columns: repeat(1, 1fr);
     padding: 3rem;
     gap: 2rem;
 }
@@ -120,7 +120,7 @@ h2 {
     display:flex;
     justify-content:space-around;
     flex-wrap: wrap;
-    padding: 3rem;
+
 
 }
 
@@ -151,19 +151,24 @@ h2 {
     width: 19rem;
 }
 
-.room-img {
-    width:40rem;
+.room-bg-img {
+    
+    flex-wrap: wrap;
+    background-image:url(../EgnaBilder/suite.jpg);
     height: 30rem;
-    padding: 2rem;
+    background-position: center;
+    background-repeat: no-repeat;
+    border: 1px solid red;
 }
 
-.room-description {
+.suite {
     display: flex;
     flex-direction: column;
-    padding: 2rem;
+   border: 2px solid black;
     text-align: center;
-    font-size:1.5rem;
 }
+
+
 
 .reserve, .swimup, .dinner, .pool, .poolbynight, .poolbar {
     display: flex;
@@ -189,17 +194,20 @@ h2 {
 }
 
 /* Media query for screens with a maximum width of 768px (typical for tablets and small screens) */
-@media only screen and (max-width: 768px) {
+@media only screen and (min-width: 600px) {
     body {
         font-size: 14px;
-        /* Adjust styles for smaller screens */
-    }
+     }
+     .area-wrapper {
+        grid-template-columns: repeat(3, 1fr);
+     }
 
- /* Media query for screens with a maximum width of 480px (typical for mobile phones) */
-@media only screen and (max-width: 480px) {
-    body {
-        font-size: 12px;
-        /* Further adjust styles for smaller screens */
-    }   
- }
-  }
+     .suite > div {
+        flex: 1;
+     }
+     .suite {
+        flex-direction: row;
+     }
+     }
+        /* Adjust styles for smaller screens */
+   
