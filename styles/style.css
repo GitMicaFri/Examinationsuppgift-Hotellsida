@@ -193,6 +193,15 @@ h2 {
     align-items: center;
 }
 
+.footer-nav {
+    background-color: blueviolet;
+    display: flex;
+    justify-content: space-around;
+    padding: 1rem;
+    height: 4rem;
+    font-size: 1.5rem;
+
+}
 /* Media query for screens with a maximum width of 768px (typical for tablets and small screens) */
 @media only screen and (min-width: 600px) {
     body {
