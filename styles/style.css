@@ -45,13 +45,9 @@ body {
     background-size: cover;
     position: relative;
     margin-bottom: 2rem;
-  
-    /*margin: 2rem;
-    border: 2px solid rgb(122, 134, 243);*/
 }
 
-.background-text, .background-text2 {
-    
+.background-text, .background-text2 { 
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
@@ -120,16 +116,15 @@ h2 {
     display:flex;
     justify-content:space-around;
     flex-wrap: wrap;
-
-
 }
 
-.chose-rooms {
+.choose-room {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: space-around;
     font-size: 2rem;
- 
+    border: 2px solid blue;
+    padding: 2px;
 }
 
 .calendar {
@@ -138,12 +133,15 @@ h2 {
     justify-content: space-around;
     padding: 2rem;
     height: 4rem;
-    margin-top: 4rem;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
 }
 
 .calendar-size {
     font-size: 2rem;
+    font-weight: bold;
     border: 1px solid red;
+
 }
 
 #check {
@@ -151,8 +149,7 @@ h2 {
     width: 19rem;
 }
 
-.room-bg-img {
-    
+.suite-bg-img {
     flex-wrap: wrap;
     background-image:url(../EgnaBilder/suite.jpg);
     height: 30rem;
@@ -161,7 +158,27 @@ h2 {
     border: 1px solid red;
 }
 
-.suite {
+
+.double-bg-img {
+    flex-wrap: wrap;
+    background-image:url(../EgnaBilder/room1.jpg);
+    height: 30rem;
+    background-position: center;
+    background-repeat: no-repeat;
+    border: 1px solid red;
+}
+
+
+.superior-bg-img {
+    flex-wrap: wrap;
+    background-image:url(../EgnaBilder/room4.jpg);
+    height: 30rem;
+    background-position: center;
+    background-repeat: no-repeat;
+    border: 1px solid red;
+}
+
+.suite, .double, .superior {
     display: flex;
     flex-direction: column;
    border: 2px solid black;
@@ -200,9 +217,12 @@ h2 {
     padding: 1rem;
     height: 4rem;
     font-size: 1.5rem;
-
 }
-/* Media query for screens with a maximum width of 768px (typical for tablets and small screens) */
+
+.contact {
+    margin-bottom: 5rem;
+}
+
 @media only screen and (min-width: 600px) {
     body {
         font-size: 14px;
@@ -214,9 +234,11 @@ h2 {
      .suite > div {
         flex: 1;
      }
-     .suite {
+     .suite, .double, .superior {
         flex-direction: row;
      }
+
+     
      }
         /* Adjust styles for smaller screens */
    
