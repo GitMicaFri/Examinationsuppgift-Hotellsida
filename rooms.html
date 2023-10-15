@@ -32,72 +32,76 @@
             <br>
         </div>
     </header>
+<!---------------Choose Room---------------------------------------------->
+    <form class="choose-room page-section" action="#" method="post">
+        <fieldset>
+            <legend>Choose your room</legend>
+            <div>
+                <label for="double">Double Room</label>
+                <input type="radio" id="double" name="room" value="Double Room">  
+            </div>
+            <div>
+                <label for="double">Superior Room</label>
+                <input type="radio" id="superior" name="room">
+            </div>
+            <div>
+                <label for="double">Swimup Suite</label>
+                <input type="radio" id="suite" name="room">
+            </div>
+        </fieldset>  
 
-    <form class="choose-room" action="#" method="post">
-        <label for="roomtype"><h2>Choose Your Room</h2></label>
-            <input type="radio" id="double" name="room">Double Room
-            <input type="radio" id="superior" name="room">Superior Room
-            <input type="radio" id="suite" name="room">Swimup Suite
-   </form> 
-       
-     <form class="calendar" action="#" method="post">  
-        <label class= "calendar-size" for="checkin">Check in date</label>
-            <input type="date" id="check">
-            <label class="calendar-size" for="checkout">Check out date</label>
-            <input type="date" id="check">
+       <!---------------Choose Date------------------------------------------->   
+   </form>    
+    <article class="choose-date">
+    <form class="calendar" action="#" method="post">  
+            <label class= "calendar-label" for="checkin">Check in date</label>
+                <input type="date" id="check">
+                <label class="calendar-label" for="checkout">Check out date</label>
+                <input type="date" id="check">
 
-        <button class="submit">Submit</button>
-    </form>
+            <button class="submit">Submit</button>
+        </form>
+    </article>
 
-    <section class="rooms-wrapper">
-       
+<!------------------------Rooms---------------------------------------->
+    <section class="wide-page-section">
             <h2>Rooms</h2>
-
-            <article class="suite">  
-               <div class="suite-bg-img"></div>
-                    <div>
-                         <article class="room-description">
-                            <h3>Swimup Suite</h3>
-                            <br>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi ducimus perspiciatis aut rerum laudantium est neque officiis voluptatem, repellendus voluptas aliquid assumenda esse magnam tempore reprehenderit sapiente soluta inventore atque.
-                            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ea explicabo ducimus qui earum! Maiores quam aliquam repudiandae assumenda tempore facilis molestiae, laborum sed quaerat blanditiis! Delectus aliquam commodi sed ipsa!
-                            </p>
-                        </article>
-                </div>
+            <article class="room" id="suite">  
+               <div class="room-bg-img"></div>
+               <div class="room-description">
+                   <h3>Swimup Suite</h3>
+                   <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi ducimus perspiciatis aut rerum laudantium est neque officiis voluptatem, repellendus voluptas aliquid assumenda esse magnam tempore reprehenderit sapiente soluta inventore atque.
+                   Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ea explicabo ducimus qui earum! Maiores quam aliquam repudiandae assumenda tempore facilis molestiae, laborum sed quaerat blanditiis! Delectus aliquam commodi sed ipsa!
+                   </p>
+               </div>
             </article>
 
-            <article class="double">  
-                <div class="double-bg-img"></div>
-                     <div>
-                          <article class="room-description">
-                             <h3>Double Room</h3>
-                             <br>
-                             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi ducimus perspiciatis aut rerum laudantium est neque officiis voluptatem, repellendus voluptas aliquid assumenda esse magnam tempore reprehenderit sapiente soluta inventore atque.
-                             Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ea explicabo ducimus qui earum! Maiores quam aliquam repudiandae assumenda tempore facilis molestiae, laborum sed quaerat blanditiis! Delectus aliquam commodi sed ipsa!
-                             </p>
-                         </article>
-                 </div>
+            <article class="room" id="double">  
+                <div class="room-bg-img"></div>
+                <div class="room-description">
+                    <h3>Double Room</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi ducimus perspiciatis aut rerum laudantium est neque officiis voluptatem, repellendus voluptas aliquid assumenda esse magnam tempore reprehenderit sapiente soluta inventore atque.
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ea explicabo ducimus qui earum! Maiores quam aliquam repudiandae assumenda tempore facilis molestiae, laborum sed quaerat blanditiis! Delectus aliquam commodi sed ipsa!
+                    </p>
+                </div>
              </article>
 
-             <article class="superior">  
-                <div class="superior-bg-img"></div>
-                     <div>
-                          <article class="room-description">
-                             <h3>Superior Room</h3>
-                             <br>
-                             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi ducimus perspiciatis aut rerum laudantium est neque officiis voluptatem, repellendus voluptas aliquid assumenda esse magnam tempore reprehenderit sapiente soluta inventore atque.
-                             Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ea explicabo ducimus qui earum! Maiores quam aliquam repudiandae assumenda tempore facilis molestiae, laborum sed quaerat blanditiis! Delectus aliquam commodi sed ipsa!
-                             </p>
-                         </article>
-                 </div>
+             <article class="room" id="superior">  
+                <div class="room-bg-img"></div>
+                <div class="room-description">
+                    <h3>Superior Room</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi ducimus perspiciatis aut rerum laudantium est neque officiis voluptatem, repellendus voluptas aliquid assumenda esse magnam tempore reprehenderit sapiente soluta inventore atque.
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ea explicabo ducimus qui earum! Maiores quam aliquam repudiandae assumenda tempore facilis molestiae, laborum sed quaerat blanditiis! Delectus aliquam commodi sed ipsa!
+                    </p>
+                </div>
              </article>
     </section>
-    
+<!-----------------Footer-------------------------------------------->
     <footer>
-        <nav class= footer-nav>
-           <p>Rate our Hotel</p>
-           <p >Back to top</p>
-           <p>Share</p> 
+        <nav class="footer-nav">
+           <a href="./index.html"><p>Back to Main page</p></a>
+           <p>Back to top</p>
+           <a href="https://github.com/GitMicaFri/Examinationsuppgift-Hotellsida"><p>Share</p></a> 
         </nav>
     </footer>
 </body>

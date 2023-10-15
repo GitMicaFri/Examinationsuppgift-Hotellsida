@@ -23,9 +23,10 @@ body {
 
 .logo {
     height: 3rem;
-    background-color: purple;
+    background-color:rgb(186, 133, 235);
     border-radius: 6px;
-    padding: 3px;
+    padding: 4px;
+    margin: 2rem;
 }
 
 .about, .home, .rooms, .contact {
@@ -70,6 +71,24 @@ h2 {
     text-align: center;
 }
 
+p {
+    line-height: 1.5em;
+}
+
+.page-section {
+    width: 100%;
+    max-width: 700px;
+    padding: 2rem;
+    margin: 0 auto;
+}
+
+.wide-page-section {
+    width: 100%;
+    max-width: 1200px;
+    padding: 2rem;
+    margin: 0 auto;
+}
+
 .playacarmen {
     font-size: 1.5rem;
     letter-spacing:0.1rem;
@@ -88,6 +107,7 @@ h2 {
 
 .area-img {
     width: 20rem;
+
 }
 .area-wrapper {
     display:grid;
@@ -96,21 +116,20 @@ h2 {
     gap: 2rem;
 }
 
-.booking {
+.choose-date {
     display: flex;
     justify-content: space-around;
+    margin-bottom: 3rem;
 }
 
 .submit {
-    height: 4rem;
-    width: 6rem;
     background-color: purple;
     color: white;
     font-size: 1.5rem;
     padding: 1rem;
     border-radius:10px;
-}
 
+}
 
 .rooms-wrapper {
     display:flex;
@@ -123,69 +142,122 @@ h2 {
     flex-direction: column;
     justify-content: space-around;
     font-size: 2rem;
-    border: 2px solid blue;
-    padding: 2px;
+    padding: 1rem;
 }
 
+.choose-room fieldset {
+    border: 0;
+}
+
+.choose-room legend {
+    margin-bottom: 2rem;
+}
+
+.choose-room div {
+    display: flex;
+    padding: 0.5rem 0;
+}
+.choose-room label {
+    flex: 1;
+    font-size: 1.2rem;
+}
+@media only screen and (min-width: 600px) {
+
+}
+    
 .calendar {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
+    align-items: center;
     padding: 2rem;
-    height: 4rem;
     margin-top: 2rem;
     margin-bottom: 2rem;
 }
 
-.calendar-size {
+.calendar * {
+    margin: .5rem 0;
+}
+
+.calendar-label {
     font-size: 2rem;
     font-weight: bold;
-    border: 1px solid red;
-
 }
+
+.calendar input {
+    margin: 0.5rem 0 !important;
+}
+
+
+@media only screen and (min-width: 600px) {
+.calender * {
+    margin: 0 .5rem;
+}
+.calendar input {
+    margin: 0 .5rem !important;
+}
+}
+
 
 #check {
     height: 3rem;
     width: 19rem;
+    margin: 2rem;
 }
 
-.suite-bg-img {
-    flex-wrap: wrap;
+/***
+Room Section
+**/
+
+#suite .room-bg-img {
     background-image:url(../EgnaBilder/suite.jpg);
-    height: 30rem;
-    background-position: center;
-    background-repeat: no-repeat;
-    border: 1px solid red;
 }
 
 
-.double-bg-img {
-    flex-wrap: wrap;
+#double .room-bg-img {
     background-image:url(../EgnaBilder/room1.jpg);
-    height: 30rem;
-    background-position: center;
-    background-repeat: no-repeat;
-    border: 1px solid red;
 }
 
 
-.superior-bg-img {
-    flex-wrap: wrap;
+#superior .room-bg-img {
     background-image:url(../EgnaBilder/room4.jpg);
-    height: 30rem;
+}
+
+.room {
+    margin-top: 2rem;
+}
+
+.room .room-bg-img {
+    width: 100%;
+    height: 12rem;
     background-position: center;
     background-repeat: no-repeat;
-    border: 1px solid red;
+    background-size: cover;
+    margin-bottom: 2rem;
 }
 
-.suite, .double, .superior {
-    display: flex;
-    flex-direction: column;
-   border: 2px solid black;
-    text-align: center;
+.room .room-description h3 {
+    margin-bottom: 1rem;
 }
 
+@media only screen and (min-width: 600px) {
+    .room {
+        justify-content: space-between;
+        align-items: center;
+       display: flex;
+       flex-direction: row;
 
+    }
+    .room .room-description {
+        text-align: center;
+        width: 40%
+    }
+    .room .room-bg-img {
+      height: 16rem;
+        width: 40%;
+        background-size: cover;
+    }
+}
 
 .reserve, .swimup, .dinner, .pool, .poolbynight, .poolbar {
     display: flex;
@@ -193,15 +265,6 @@ h2 {
     align-items: center;
     text-align: center;
 }
-
-#suite, #double, #superior {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    flex-wrap: wrap;
-    padding: 2rem;
-}
-
 
 .contact {
     display: flex;
@@ -211,13 +274,27 @@ h2 {
 }
 
 .footer-nav {
-    background-color: blueviolet;
-    display: flex;
-    justify-content: space-around;
-    padding: 1rem;
-    height: 4rem;
-    font-size: 1.5rem;
+    
+    background-color: rgb(186, 133, 235);
 }
+
+.footer-nav a {
+    display: block;
+}
+
+@media only screen and (min-width: 600px) {
+    .footer-nav {
+        font-size: 1.5rem;
+        display: flex;
+        justify-content: space-around;
+        padding: 1rem;
+        height: 4rem;
+    }
+    .footer-nav a {
+        display: inline;
+    }
+}
+ 
 
 .contact {
     margin-bottom: 5rem;
@@ -239,6 +316,6 @@ h2 {
      }
 
      
-     }
+}
         /* Adjust styles for smaller screens */
    
