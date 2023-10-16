@@ -94,16 +94,6 @@ p {
     letter-spacing:0.1rem;
 }
 
-.blue-btn {
-    height: 2rem;
-    width: 6rem;
-    background-color:purple;
-    color: white;
-    border: none;
-    border-radius: 6px;
-    letter-spacing: 0.1rem;
-    margin-top: 2rem;
-}
 
 .area-img {
     width: 20rem;
